@@ -1,0 +1,191 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/loginback"
+    android:id="@+id/chat_sdk_root_view"
+    android:alpha="1.0"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.braunster.chatsdk.activities.ChatSDKLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_above="@+id/linear_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.8"
+            android:src="@drawable/logowhite"
+            android:visibility="visible" />
+
+
+        <EditText
+            android:id="@+id/chat_sdk_et_mail"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/chat_sdk_et_password"
+            android:layout_alignLeft="@+id/linear_buttons"
+            android:layout_alignStart="@+id/linear_buttons"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/corner"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/chat_sdk_et_password"
+            android:textColorHint="#fff"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/chat_sdk_et_password"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/chat_sdk_btn_login"
+            android:layout_alignLeft="@+id/chat_sdk_btn_login"
+            android:layout_alignStart="@+id/chat_sdk_btn_login"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/corner"
+            android:ems="10"
+            android:gravity="center"
+
+
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#fff"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/linear_buttons"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/chat_sdk_et_mail"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_sdk_btn_anon_login"
+            android:layout_width="142dp"
+            android:layout_height="20dp"
+            android:layout_above="@+id/linear_api_buttons"
+            android:layout_alignLeft="@+id/linear_buttons"
+            android:layout_alignStart="@+id/linear_buttons"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/chat_sdk_btn_register"
+            android:layout_toStartOf="@+id/chat_sdk_btn_register"
+            android:text="@string/anonymous_login"
+            android:textColor="#f2bc97"
+
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linear_api_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/li_version"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.facebook.widget.LoginButton xmlns:fb="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chat_sdk_facebook_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+
+                android:layout_marginLeft="5dp"
+                android:alpha="0.44"
+                android:background="@drawable/ic_facebook"
+                android:text=""
+                fb:login_text=""
+                fb:logout_text="" />
+
+            <Button
+                android:id="@+id/chat_sdk_btn_twitter_login"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_twitter"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/chat_sdk_btn_google_login"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="15dp"
+                android:alpha="0.44"
+
+                android:background="@drawable/googlepluslogo" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/li_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chat_sdk_txt_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_sdk_btn_anon_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/chat_sdk_version" />
+
+            <TextView
+                android:id="@+id/chat_sdk_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/chat_sdk_txt_version"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/chat_sdk_txt_version" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chat_sdk_btn_register"
+
+            android:layout_width="77dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/chat_sdk_btn_login"
+            android:layout_alignRight="@+id/chat_sdk_btn_login"
+            android:layout_below="@+id/chat_sdk_btn_login"
+            android:layout_marginRight="5dp"
+            android:gravity="end"
+            android:text="Sign Up"
+            android:textColor="#f2bc97"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/chat_sdk_btn_login"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/chat_sdk_btn_anon_login"
+            android:layout_alignLeft="@+id/linear_buttons"
+            android:layout_alignStart="@+id/linear_buttons"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/cornerone"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="#f2bc97"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

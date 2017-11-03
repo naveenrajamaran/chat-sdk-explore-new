@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:background="#FFE0B2"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="75dp"
+    android:layout_width="300dp"
+    android:layout_height="420dp"
+    android:weightSum="1">
+
+
+
+    <com.astuetz.pagersslidingtabstrip.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        style="@style/TabSlidingPager"
+        android:layout_below="@+id/pager"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+</RelativeLayout>

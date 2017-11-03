@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="#EAEDED"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+      
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-thin"
+        app:itemBackground="@color/colorWhite"
+        app:menu="@menu/menu_firstmain"
+        android:layout_marginTop="3dip"
+        app:itemIconTint="@color/background_tab"
+        app:itemTextColor="@color/background_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/profilepager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/ridetitle"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="Select Riding Group"
+        android:textStyle="bold"
+        android:layout_below="@+id/batbar"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/selectridegroup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:layout_below="@+id/ridetitle"
+        android:layout_alignLeft="@+id/selectedgroup"
+        android:layout_alignStart="@+id/selectedgroup" />
+    <TextView
+        android:id="@+id/ridetimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Timer :"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/ridetitle"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/selectedgroup"
+        android:layout_alignStart="@+id/selectedgroup"/>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed:"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/ridetitle"
+       />
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed:"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/ridetimer"
+        />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/ridetitle"
+        android:layout_alignRight="@+id/ridetitle"
+        android:layout_alignEnd="@+id/ridetitle" />
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance:"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/counttime"
+        android:layout_alignBottom="@+id/counttime"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
+
+
+    <TextView
+        android:id="@+id/counttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CountTime"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/ridetimer"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/ridetitle" />
+
+    <Button
+        android:id="@+id/startride"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text="Start Ride"
+        android:capitalize="none"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cornerthree"
+        android:layout_below="@+id/selectridegroup"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_above="@+id/startride"
+        android:visibility="gone"
+        android:id="@+id/hidelist" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:textSize="16dp"
+            android:text="Scan"
+            android:background="@drawable/cornerthree"
+            android:layout_alignTop="@+id/loading"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/button"
+            android:minWidth="30dip"
+            android:minHeight="30dip"
+            android:layout_marginTop="15dp" />
+
+
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:background="@drawable/cornerthree"
+            android:text="Stop"
+            android:visibility="invisible"
+            android:textSize="16dp"
+
+            android:layout_alignBottom="@+id/loading"
+            android:layout_alignLeft="@+id/button"
+            android:layout_alignStart="@+id/button" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/selectedgroup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_marginTop="45dp"
+        android:layout_above="@+id/startride"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/batbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/batval"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/devsts"
+        android:layout_toRightOf="@+id/ridetitle"
+        android:layout_toEndOf="@+id/ridetitle" />
+
+    <ProgressBar
+        android:id="@+id/progbat"
+        android:max="100"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/batbar"
+        android:minWidth="75dip"
+        android:progressDrawable="@drawable/customprogress"
+        android:layout_marginBottom="20dp"
+        android:minHeight="150dip"
+        android:layout_alignRight="@+id/startride"
+        android:layout_alignEnd="@+id/startride" />
+
+    <TextView
+        android:id="@+id/devsts"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/progbat"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="37dp"
+        android:textSize="12dp"
+        android:text="Device Status:" />
+
+    <TextView
+        android:id="@+id/devname"
+        android:layout_width="150dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="12dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/devsts"
+        android:layout_alignRight="@+id/devsts"
+        android:layout_below="@+id/batval"
+        android:layout_marginTop="8dp"
+        android:text="Device Name : " />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/currentRide"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:src="@drawable/ride"
+        app:backgroundTint="#FF5819"
+        app:fabSize="auto"
+        android:visibility="gone"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        app:rippleColor="#fff"
+      />
+</RelativeLayout>
+
+
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "396629937189",
+    "project_id": "firebase-revsmart"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396629937189:android:2f90496f1e628df1",
+        "android_client_info": {
+          "package_name": "com.braunster.androidchatsdk.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "396629937189-on5d259uan7k6qke6ndvve5u99tr5qqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO_WFXlTN9i2TR-iikx60XLgV8QLGkNS4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

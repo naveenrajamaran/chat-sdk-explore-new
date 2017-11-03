@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chat</string>
+
+    <!--Api-Keys-->
+        <!--Facebook-->
+        <string name="facebook_id">966932090008976</string>
+
+        <!--Google Maps-->
+        <string name="google_maps_api_key">AIzaSyDbbcK8UMIRx2gmNsSC0g1bQe0dmpDKvzU</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+
+        <!--Twitter-->
+        <string name="twitter_consumer_key">sQ4jMDsA2735WyzE6D9NLgRrO</string>
+        <string name="twitter_consumer_secret">5BmQFtS1GIg1fI9eHVkFQapKAxqxz1dz0VkQ7QzFEGHnb0uEcz</string>
+        <string name="twitter_access_token">1187489798-VGseg1K3s7vlzCXuFP82tTLNQ2oJDVAmMWR33oD</string>
+        <string name="twitter_access_token_secret">jaCeAEWTv3h1RBXyq1uF3Z8JtSYWy8W3Fe4GVMzrWI965</string>
+        <string name="twitter_callback_url">https://chatcatsdk.firebaseapp.com/__/auth/handler</string>
+    //Location
+
+    <string name="title_activity_main">Transport Tracker</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="stop_tracking">Stop Tracking</string>
+    <string name="enter_transport_id">Enter transport ID</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_password">Enter password</string>
+    <string
+        name="location_permissions_required">Location permissions are required for tracking
+        location. Please grant these permissions to continue.</string>
+    <string name="missing_inputs">Please enter a transport ID, email and password</string>
+    <string name="tracking">Tracking &#x2713;</string>
+    <string name="not_tracking">Not tracking &#x2718;</string>
+
+    <string name="location_permission_required">Location permission required.</string>
+    <string name="gps_required">Gps not enabled.</string>
+    <string name="ok">OK</string>
+    <string name="enable">Enable</string>
+    <string name="auth_failed">Firebase authentication failed</string>
+    <string name="confirm_stop">Do you really want to disable location tracking?</string>
+
+    <string name="firebase_path" translatable="false">raw-locations/</string>
+    <string name="prefs" translatable="false">prefs</string>
+    <string name="transport_id" translatable="false">transport_id</string>
+
+
+        <!--Parse-->
+        <!--<string name="parse_app_id">o29mp2pjjsTjxT8pn0xVetApNwXGwLkTfR4J6bIi</string>
+        <string name="parse_client_key">yZ8NrZvFoFHyErPbm7KAX91uXX1ggHHm5MDScpng</string>-->
+
+        <!--Backendless-->
+        <!--<string name="backendless_app_id">AA7710A9-B224-1835-FFD1-2695B352F600</string>-->
+        <!--<string name="backendless_secret_key">C152EA4B-C622-334C-FF66-1FD8A690BD00</string>-->
+    <string name="backendless_app_id">C7DD343D-2C9C-6917-FFF6-4AB6C6AC6A00</string>
+    <string name="backendless_secret_key">A2822287-A7D7-4B8C-FFB3-ACB75BFCC900</string>
+
+
+        <string name="backendless_app_version">v1</string>
+
+        <string name="google_project_number">396629937189</string>
+
+        <!--BugSense-->
+        <string name="bug_sense_key"></string>
+
+
+
+
+
+
+
+
+
+
+    <string name="menu">Menu</string>
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_hot_deals">Hot deals</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_fragment">Search Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="hot_deals_fragment">Hot Deals Fragment</string>
+    <string name="ride">RIDE</string>
+    <string name="loc">LOCATE</string>
+    <string name="chat">CHAT</string>
+    <string name="exp">EXPLORE</string>
+
+
+
+
+
+
+
+
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="anonymous_login">Forgot  Your  Password ?</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
+    <string name="add_contacts">Add Contacts</string>
+    <string name="add_users">Add Users</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="contacts_upper_case">CONTACTS</string>
+    <string name="select_all">Select All</string>
+    <string name="send_location">Send this location</string>
+    <string name="search_upper_case">SEARCH</string>
+    <string name="send">Send</string>
+    <string name="pick_friends">Pick Friends</string>
+
+    <!--ThreadDetails activity-->
+    <string name="thread_details_activity_title">Thread Details</string>
+    <string name="thread_details_activity_change_name_dialog_title">Set thread name</string>
+
+    <!--Message list adapter-->
+    <string name="message_adapter_no_google_maps">This device does not have google maps</string>
+    <string name="message_adapter_load_image_fail">Can\'t show image</string>
+
+    <!-- Login Activity-->
+    <string name="chat_sdk_version">Version:</string>
+    <string name="login_activity_no_mail_toast">Please enter your email</string>
+    <string name="login_activity_no_password_toast">Please enter password</string>
+    <string name="login_activity_facebook_connection_fail_toast">Failed to connect to Facebook</string>
+    <string name="login_activity_failed_to_login_toast">Failed to connect</string>
+    <string name="login_activity_failed_to_register_toast">Failed to register</string>
+
+    <!--BaseFragment/BaseActivity-->
+    <string name="create_thread_with_users_fail_toast">Failed to start chat</string>
+    <string name="delete_thread_fail_toast">Unable to delete thread</string>
+    <string name="delete_thread_success_toast">Thread is deleted</string>
+
+    <!--ChatSDKAbstractChatActivity-->
+    <string name="chat_activity_no_more_messages_to_load_toast">There is no new messages to load&#8230;</string>
+    <string name="chat_activity_add_item_text">Add contact to chat</string>
+    <string name="chat_activity_show_users_item_text">Show thread users</string>
+    <string name="chat_activity_show_thread_details">Thread Details</string>
+
+    <!--ChatSDKAbstractContactsFragment-->
+    <string name="abstract_contact_fragment_user_added_to_thread_toast_success">User added to thread, Name:&#160;</string>
+    <string name="abstract_contact_fragment_user_added_to_thread_toast_fail">Can\'t add user to thread.</string>
+    <string name="abstract_contact_fragment_share_with_contact_toast_fail_unknown_type">Problem sharing contact, Unknown share type.</string>
+
+    <!--ChatSDKShareWithContactsActivity-->
+    <string name="share_activity_error_getting_share_data">Error getting share data</string>
+
+    <!--ChatSDKPickFriendsActivity-->
+    <string name="pick_friends_activity_no_users_selected_toast">Please select at least one user</string>
+    <string name="pick_friends_activity_prog_dialog_add_to_convo_message">Adding users to thread&#8230;</string>
+    <string name="pick_friends_activity_prog_dialog_open_new_convo_message">Creating thread&#8230;</string>
+
+    <!--ExitHelper-->
+    <string name="exit_helper_double_tap_toast">click back again to exit</string>
+    <!-- Exit Dialog-->
+    <string name="alert_exit">Are you sure you want to exit?</string>
+    <string name="exit">Exit</string>
+    <string name="stay">Stay</string>
+
+    <!--ChatSDKSearchActivity-->
+    <string name="search_activity_no_text_input_toast">Please enter some text for the search</string>
+    <string name="search_activity_no_user_found_toast">No match found</string>
+    <string name="search_activity_no_contact_selected_toast">No contacts were selected</string>
+    <string name="search_activity_user_added_as_contact_after_count_toast"> Users were added as contacts</string>
+    <string name="search_activity_prog_dialog_init_message">Fetching&#8230;</string>
+    <string name="search_activity_prog_dialog_before_count_message">Fetching&#8230; Found:&#160;</string>
+
+    <!--PublicThreadFragment-->
+    <string name="public_thread_fragment_add_item_text">Add Public chat Room</string>
+
+    <!--Add public chat room dialog-->
+    <string name="add_public_chat_dialog_title">Add Chat Room</string>
+    <string name="add_public_chat_dialog_progress_message">Creating thread&#8230;</string>
+    <string name="add_public_chat_dialog_toast_success_before_thread_name">Public thread&#160;</string>
+    <string name="add_public_chat_dialog_toast_success_after_thread_name">&#160;is created.</string>
+    <string name="add_public_chat_dialog_toast_error_before_thread_name">Failed to create public thread&#160;</string>
+
+    <!--Delete Contact Dialog-->
+    <string name="alert_delete_contact">"Are you sure you want to delete this contact?</string>
+
+    <!--Delete Thread Dialog-->
+    <string name="alert_delete_thread">"Are you sure you want to delete this thread?</string>
+
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Login Dialog-->
+    <string name="authenticating">Authenticating&#8230;</string>
+    <string name="login_activity_auth_failed">Auth Failed</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="registering">Registering&#8230;</string>
+
+    <!--Acceptability-->
+    <string name="acces_message_option_button">Message option button</string>
+
+    <string name="action_settings">Help</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_contact_developer">Contact Developer</string>
+    <string name="action_add_chat">Add Chat</string>
+    <string name="done_show_again">Done show again</string>
+    <string name="double_back_press_exit">Use double back button pressed to exit</string>
+
+    <!--Notification-->
+    <string name="not_message_title">Message</string>
+    <string name="not_message_ticker">You got a new message</string>
+    <string name="not_follower_title">New Follower</string>
+    <string name="not_follower_ticker">You got a new follower</string>
+    <string name="not_follower_content">is following you!</string>
+    <string name="not_image_message">Image message</string>
+    <string name="not_location_message">Location message</string>
+    
+    <!--Error-->
+    <string name="unable_to_fetch_image">Unable to fetch image&#8230;</string>
+    <string name="unable_to_save_file">Unable to save file&#8230;</string>
+    <string name="unable_to_send_location_message">Unable to send location message&#8230;</string>
+    <string name="unable_to_send_image_message">Unable to send image message&#8230;</string>
+    <string name="unable_to_send_message">unable to send message&#8230;</string>
+    
+    <!--State-->
+    <string name="sending">Sending&#8230;</string>
+    <string name="not_messages_summary">%s unread messages</string>
+    <string name="unable_to_catch_image">Unable to catch image</string>
+    <string name="status">Status</string>
+    <string name="location_hint">Location</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="action_edit">Edit</string>
+    <string name="chat_sdk_edit_profile_select_country">Select Country</string>
+    <string name="chat_sdk_edit_profile_pick_birth_date">Select date of birth</string>
+    <string name="app_info">App Info</string>
+    <string name="unable_to_open_app_in_settings">Unable to open app in settings</string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Connect to your device</string>
+    <string name="slide_1_desc">Get continuous access to the voice assistant </string>
+    <string name="slide_1_desc1">and group communication while riding.</string>
+
+    <string name="slide_2_title">Locate</string>
+    <string name="slide_2_desc">Locate your co-riders on the map.</string>
+
+    <string name="slide_3_title">Talk to co-riders</string>
+    <string name="slide_3_desc">Communicate with the co-riders on the go.</string>
+
+    <string name="slide_4_title">Host Riders</string>
+    <string name="slide_4_desc">Host a ride or find people to the ride with.</string>
+
+    <string name="slide_5_title">Explore</string>
+    <string name="slide_5_desc">Find new places and experience around you.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <string name="timerVal">00:00:00</string>
+    08
+    <string name="pauseButtonLabel">Pause</string>
+    09
+    <string name="startButtonLabel">Start</string>
+
+
+
+
+    <!--BLE-->
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+
+
+
+    <!--Notification-->
+
+    <string name="not_audio_message">Audio message</string>
+    <string name="not_video_message">Video message</string>
+
+
+    <!--Error-->
+    <string name="unable_to_fetch_audio">Unable to fetch audio&#8230;</string>
+    <string name="unable_to_fetch_video">Unable to fetch video&#8230;</string>
+
+    <string name="unable_to_send_audio_message">Unable to send audio message&#8230;</string>
+    <string name="unable_to_send_video_message">Unable to send video message&#8230;</string>
+
+    <!--State-->
+    <string name="record">Rec</string>
+    <string name="message_adapter_load_video_fail">Can\'t show video</string>
+    <string name="unable_to_catch_audio">Unable to catch audio</string>
+    <string name="unable_to_catch_video">Unable to catch video</string>
+
+
+    <!--Audio recording-->
+    <string name="play_audio">Play</string>
+    <string name="record_audio">Record</string>
+    <string name="submit_audio">Submit</string>
+    <string name="stop">Stop</string>
+    <string name="back">Back</string>
+</resources>

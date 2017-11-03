@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_element_signup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corner"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:text="Create New Account"
+            android:textColor="#5f7859"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/newmail"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:drawablePadding="14dp"
+            android:hint="Registered Email "
+            android:textColorHint="#6060"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/mailicon"
+            android:layout_below="@+id/textView4"
+            android:layout_alignLeft="@+id/newpass"
+            android:layout_alignStart="@+id/newpass"
+            android:layout_marginTop="38dp" />
+
+        <EditText
+            android:id="@+id/newpass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/newconpass"
+            android:layout_alignStart="@+id/newconpass"
+            android:layout_gravity="center"
+
+            android:layout_below="@+id/newmail"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/conpass"
+            android:drawablePadding="13dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#6060" />
+
+        <EditText
+            android:id="@+id/newconpass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/conpass"
+            android:drawablePadding="13dp"
+            android:ems="10"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textColorHint="#6060" />
+
+        <Button
+            android:id="@+id/newsend"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/newconpass"
+            android:background="@drawable/cornerone"
+            android:gravity="center"
+            android:text="Get Started"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/newcancel"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Cancel"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="200dp"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

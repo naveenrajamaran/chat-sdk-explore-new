@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="chat_sdk_shadow">#CC000000</color>
+
+
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ABB2B9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryLight">#84FF19</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDivider">#2FE897</color>
+    <color name="colorBorder">#a7a4a4</color>
+    <color name="color_state_list">#00FFFF</color>
+
+
+    <color name="bg_gradient_start">#31244e</color>
+    <color name="bg_gradient_end">#6b394c</color>
+
+    <color name="chat_sdk_theme_color">#FF5733</color>
+    <color name="chat_sdk_theme_color_dark">#aa1715</color>
+    <color name="chat_sdk_theme_background">#EAEDED</color>
+
+    <color name="chat_sdk_button_login_button_color">#1c93db</color>
+    <color name="chat_sdk_button_login_button_color_pressed">#1874ac</color>
+
+    <color name="chat_sdk_button_register_button_color">#78b737</color>
+    <color name="chat_sdk_button_register_button_color_pressed">#59872a</color>
+
+    <color name="chat_sdk_button_anonymous_button_color">#aaaaaa</color>
+    <color name="chat_sdk_button_anonymous_button_color_pressed">#888787</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="navigation_tab_pressed">#ff4500</color>
+
+
+
+
+
+    <color name="colorPrimaryone">#3F51B5</color>
+    <color name="colorPrimaryDarkone">#303F9F</color>
+    <color name="colorAccentone">#FF4081</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="bg_screen5">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#000</color>
+    <color name="dot_dark_screen2">#000</color>
+    <color name="dot_dark_screen3">#000</color>
+    <color name="dot_dark_screen4">#000</color>
+    <color name="dot_dark_screen5">#000</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#fff</color>
+    <color name="dot_light_screen2">#fff</color>
+    <color name="dot_light_screen3">#fff</color>
+    <color name="dot_light_screen4">#fff</color>
+    <color name="dot_light_screen5">#fff</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
+
+
+
+
+    <!--explore-->
+    <color name="md_cyan_500_primary">#00BCD4</color>
+    <!-- light -->
+    <color name="md_cyan_50">#E0F7FA</color>
+    <color name="md_cyan_100">#B2EBF2</color>
+    <color name="md_cyan_200">#80DEEA</color>
+    <color name="md_cyan_300">#4DD0E1</color>
+    <color name="md_cyan_400">#26C6DA</color>
+    <!-- dark -->
+    <color name="md_cyan_600">#00ACC1</color>
+    <color name="md_cyan_700">#0097A7</color>
+    <color name="md_cyan_800">#00838F</color>
+    <color name="md_cyan_900">#006064</color>
+
+    <!-- light -->
+    <color name="md_cyan_A100">#84FFFF</color>
+    <color name="md_cyan_A200">#18FFFF</color>
+    <color name="md_cyan_A400">#00E5FF</color>
+    <color name="md_cyan_A700">#00B8D4</color>
+
+</resources>

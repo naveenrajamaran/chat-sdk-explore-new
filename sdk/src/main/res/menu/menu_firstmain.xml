@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item
+        android:id="@+id/Bottomone"
+        android:icon="@drawable/ride"
+        android:checked="true"
+
+        android:title="@string/ride"
+    ></item>
+    <item
+        android:id="@+id/Bottomtwo"
+        android:icon="@drawable/location"
+        android:title="@string/loc"
+        ></item>
+    <item
+        android:id="@+id/Bottomthree"
+        android:icon="@drawable/chat"
+        android:title="@string/chat"
+        ></item>
+    <item
+        android:id="@+id/Bottomfour"
+        android:icon="@drawable/explorer"
+        android:title="@string/exp"
+        ></item>
+
+
+
+</menu>
